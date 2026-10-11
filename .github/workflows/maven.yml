@@ -20,7 +20,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B clean verify
       - name: Upload coverage to Coveralls
-                uses: coverallsapp/github-action@8d6379e14d29928660c4ba802d8e85393440b329 # v2.3.8
+        uses: coverallsapp/github-action@8d6379e14d29928660c4ba802d8e85393440b329 # v2.3.8
           github-token: ${{ secrets.GITHUB_TOKEN }}
           file: target/site/jacoco/jacoco.xml
           format: jacoco
